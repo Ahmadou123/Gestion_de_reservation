@@ -13,7 +13,7 @@ if(isset($_POST['Ajouterlevoyag'])){
      $code_v = rand(100000, 999999);
     Tvoyage::insererVoyage($code_v, $ville_d, $ville_a, $heure_d, $date_v, $prix_v); // Appeler la fonction pour insérer le voyage
     //Affichage des informations du voyage sur la page de confirmation
-    header("Location: confirmation.php?code_v=$code_v");
+    header("Location: index.php?code_v=$code_v");
     exit;
 }
 ?>
